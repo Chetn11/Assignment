@@ -1,6 +1,123 @@
-.ban_Container{
-    width: 65%;
+* {
+    box-sizing: border-box;
+  }
+  
+  .ban_Container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
-    border: solid 1px black;
+    position: relative;
     height: 500px;
-}
+  }
+  
+  .firstHalf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+  }
+  
+  button {
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  input {
+    font-size: medium;
+    font-weight: 500;
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .wrapper input {
+    border: 2px solid gray;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  
+  .wrapper button {
+    background: #ff6347;
+    color: #fff;
+    width: 100px;
+    border-radius: 50px;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    right: 5px;
+  }
+  
+  .secondHalf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+  }
+  
+  .bannerImage {
+    max-width: 100%;
+    height: auto;
+    background: none;
+    border: none;
+    height: 100%;
+  }
+  
+  img {
+    background-color: transparent;
+    mix-blend-mode: multiply;
+  }
+  
+  @media screen and (max-width: 920px) {
+    .ban_Container {
+      flex-direction: column;
+      align-items: center;
+      height: auto; /* Adjust height for better responsiveness */
+    }
+  
+    .firstHalf {
+      width: 100%;
+      text-align: center; /* Center text content */
+    }
+  
+    .secondHalf {
+      width: 100%;
+      margin-top: 20px; /* Add some spacing between sections */
+    }
+  
+    .wrapper {
+      max-width: 100%; /* Make the wrapper full width */
+    }
+  
+    .wrapper button {
+      width: 100px;
+      padding: 10px;
+      border-radius: 50px;
+      height: auto;
+      position:inherit;
+      top: auto;
+      right: auto;
+      margin-top: 10px; /* Add spacing between input and button */
+    }
+  
+    .wrapper input {
+      width: 100%; /* Make input full width */
+      max-width: 100%; /* Ensure it doesn't exceed container width */
+      border: 2px solid gray;
+      border-radius: 50px;
+      padding: 1rem 2rem;
+    }
+  }
+  

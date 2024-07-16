@@ -12,7 +12,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="container">
+    <div className={styles.container}>
       <div className={styles.mainContainer}>
         <div className={styles.faq}>
           <h4>FAQS</h4>
