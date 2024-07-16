@@ -1,0 +1,73 @@
+.mainContainer {
+    display: flex;
+    max-width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .accordion {
+    width: 100%;
+  }
+  
+  .item {
+    background: #dd6851;
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  .item:hover{
+    transform: scale(1.02);
+  }
+  
+  .title {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .contentHide {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  }
+  
+  .contentShow {
+    color: #fff;
+    height: auto;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  }
+  .faq{
+    margin: 20px;
+  }
+  .faq h4{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 5px;
+  }
+  .faq h1{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    margin: 5px;
+  }
+  .faq .email {
+    margin: 5px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  @media screen and (max-width: 780px) {
+    .mainContainer {
+        display: flex;
+        max-width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+  }

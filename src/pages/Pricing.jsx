@@ -1,8 +1,11 @@
 import React from 'react'
+import FAQ from '../components/FAQ'
 
 function Pricing() {
   return (
-    <div>Pricing</div>
+    <div>
+      <FAQ/>
+    </div>
   )
 }
 

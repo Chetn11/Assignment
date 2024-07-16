@@ -30,8 +30,8 @@ footer .container {
 .about {
     text-align: left;
 }
-h1{
-    color: #fff;
+.about h1{
+    color:#ff6347;
 }
 .about h2 {
     color: #fff;
@@ -42,7 +42,7 @@ h1{
 .about p {
     color: #fff;
 }
-h2{
+.about h2,.quickLinks h2{
     color: #fff;
     margin-bottom: 5px;
 }

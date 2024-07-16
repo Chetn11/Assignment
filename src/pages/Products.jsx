@@ -1,7 +1,8 @@
 import React from 'react'
+import FAQ from '../components/FAQ'
 
 export default function Products() {
   return (
-    <div>Products</div>
+    <div><FAQ/></div>
   )
 }

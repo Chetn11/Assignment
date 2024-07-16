@@ -8,9 +8,12 @@
 
 .navbar {
     display: flex;
+    width: 75%;
+    margin: auto;
     justify-content: space-around;
     align-items: center;
     background: #fff;
+    /* border: 1px solid black; */
     height: 75px;
 }
 
@@ -18,7 +21,7 @@
 .logo {
     font-size: 30px;
     cursor: pointer;
-    color: #222;
+    color: #ff6347;
 }
 
 
