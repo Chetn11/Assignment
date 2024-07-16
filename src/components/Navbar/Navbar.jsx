@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <h3 className={styles.logo}>ShulkPay</h3>
+      <Link to="/" className={styles.logo} ><h3 className={styles.logo}>ShulkPay</h3></Link>
       <ul className={isMobile ? styles.nav_mob_links : styles.nav_links}>
         <li>
           <Link to="/" className={`${styles.link} ${activeLink === '/' ? styles.active : ''}`} onClick={() => handleLinkClick('/')}>
