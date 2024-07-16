@@ -1,47 +1,102 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.navbar{
+
+
+.navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: #fff;
     height: 75px;
 }
-.logo{
+
+
+.logo {
     font-size: 30px;
     cursor: pointer;
+    color: #222;
 }
-.nav_links{
+
+
+.nav_links {
     display: flex;
     justify-content: flex-end;
     list-style: none;
     width: 75%;
 }
 
-.home,.product,.price,.contact{
+
+.link {
     text-decoration: none;
     font-size: 20px;
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
-    color: black;
+    color: #222;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
-.menu_icon{
+
+
+.link:hover {
+    transform: scale(1.1);
+    color: #ff6347; 
+}
+
+/* Underline effect */
+.link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ff6347;
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+    left: 0;
+    background: #ff6347; 
+}
+
+/* Active link styling */
+.active {
+    transform: scale(1.1);
+    color: #ff6347;
+}
+
+.active::after {
+    width: 100%;
+    left: 0;
+    background: #ff6347;
+}
+
+
+.menu_icon {
     display: none;
 }
-@media screen and (max-width:780px){
-    .logo{
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 780px) {
+    .logo {
         display: flex;
         position: absolute;
         top: 15px;
         left: 35px;
     }
-    .nav_links{
-        display: none
+
+    .nav_links {
+        display: none;
     }
-    .menu_icon{
+
+    .menu_icon {
         display: block;
         position: absolute;
         font-size: 30px;
@@ -51,17 +106,19 @@
         top: 15px;
         right: 25px;
     }
-    .nav_mob_links{
+
+    .nav_mob_links {
         position: absolute;
         display: block;
         list-style: none;
         left: 0;
         background-color: white;
         top: 75px;
-        transition:  all 0.5s ease-out;
+        transition: all 0.5s ease-out;
         width: 100%;
     }
-    .home,.product,.price,.contact{
+
+    .link {
         text-align: center;
         padding: 32px;
         width: 100%;

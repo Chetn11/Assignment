@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Navbar } from './components/Navbar/Navbar';
 import AllRoutes from './Router/AllRoutes';
-import Footer from './components/Navbar/Footer/Footer';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (

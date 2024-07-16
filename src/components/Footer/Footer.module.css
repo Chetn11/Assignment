@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+footer {
+    width: 100%;
+    padding: 50px 100px;
+    background: #222;
+    margin-top: auto; 
+}
+
+footer .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.about {
+    text-align: left;
+}
+h1{
+    color: #fff;
+}
+.about h2 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #fff;
+}
+h2{
+    color: #fff;
+    margin-bottom: 5px;
+}
+footer .container .social {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+footer .container .social li {
+    list-style: none;
+}
+
+footer .container .social li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .container .social li a:hover {
+    transform: scale(1.1);
+}
+
+.quickLinks {
+    text-align: left;
+}
+
+.quickLinks ul li {
+    list-style: none;
+}
+
+.quickLinks ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.quickLinks ul li a:hover {
+    transform: scale(1.1);
+    color: #ff6347;
+}
+
+.quickLinks ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ff6347;
+    transition: width 0.3s ease;
+}
+
+.quickLinks ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.copyRight {
+    width: 100%;
+    padding: 20px 100px 30px;
+    text-align: center;
+    border-top: 1px solid #fff;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .copyRight {
+        padding: 20px 40px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        padding: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        grid-gap: 20px;
+    }
+}
